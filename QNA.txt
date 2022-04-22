@@ -1,8 +1,8 @@
 What is your name? 
-D:\AIML\q1.jpeg
+q1.jpeg
 What do you do? 
-D:\AIML\q2.jpeg
+q2.jpeg
 Are you having fun? 
-D:\AIML\q3.jpeg
+q3.jpeg
 where are you?
-D:\AIML\q4.jpeg
+q4.jpeg
