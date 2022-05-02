@@ -75,6 +75,4 @@ def ocr(read_image_url):
                 n=0
     else:
         res = requests.get('https://www.google.com/search?q= '+textmessage)
-        print(str(res))
-        if res.status_code ==200:
-            webbrowser.open('https://www.google.com/search?q= '+textmessage)
+        webbrowser.open('https://www.google.com/search?q= '+textmessage)
