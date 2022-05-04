@@ -16,7 +16,13 @@
 	<div>
 		<img src="{{ url_for('display_image', filename=filename) }}">
 	</div>
+	{% if urlparameter %}
+		<div>
+			<a href="{{ urlparameter }}">click</a>
+		</div>
+	{% endif %}
 {% endif %}
+
 <form method="post" action="/" enctype="multipart/form-data">
     <dl>
 		<p>
