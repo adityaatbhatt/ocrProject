@@ -65,14 +65,14 @@ def ocr(read_image_url):
     while n:
         x=file.readline()
         if( x.rstrip()).lower()==(textmessage.rstrip()).lower():
-            print('hi')
-            im = Image.open(file.readline()[:-1])
+            tx=file.readline()[:-1]
+            im = Image.open(tx)
             im.show()
-            break
+            return (tx,0)
         else:
             if x=='':
                 file.close()
                 n=0
     else:
         res = requests.get('https://www.google.com/search?q= '+textmessage)
-        webbrowser.open('https://www.google.com/search?q= '+textmessage)
+        return(0, 'https://www.google.com/search?q= '+textmessage)
